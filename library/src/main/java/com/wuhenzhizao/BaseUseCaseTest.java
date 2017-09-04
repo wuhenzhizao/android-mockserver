@@ -38,13 +38,11 @@ public class BaseUseCaseTest extends Assert {
 
     @Before
     protected void onStart() {
-        MockitoAnnotations.initMocks(this);
         initMockServer();
     }
 
     @After
     protected void onFinish() {
-        MockRepository.clear();
     }
 
     private void initMockServer() {
